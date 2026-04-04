@@ -1,0 +1,76 @@
+# ==========================================
+# Python e Ambientes Virtuais
+# ==========================================
+# Arquivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Ambientes Virtuais (ajuste se usar outro nome)
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# ==========================================
+# Dados e Modelos (Crucial para ML)
+# ==========================================
+# Ignora todo o conteúdo das pastas, mas mantém a estrutura de diretórios caso você use .gitkeep
+data/*
+!data/.gitkeep
+!data/**/.gitkeep
+models/*
+!models/.gitkeep
+
+# Extensões comuns de dados
+*.csv
+*.tsv
+*.parquet
+*.json
+*.xlsx
+*.h5
+
+# Extensões de modelos de ML e Deep Learning (PyTorch, Scikit-Learn, etc.)
+*.pt
+*.pth
+*.pkl
+*.joblib
+*.onnx
+
+# ==========================================
+# Rastreamento de Experimentos (MLflow)
+# ==========================================
+mlruns/
+mlartifacts/
+
+# ==========================================
+# Qualidade de Código, Testes e Logs
+# ==========================================
+# pytest e coverage
+.pytest_cache/
+.coverage
+htmlcov/
+coverage.xml
+
+# ruff (Linting)
+.ruff_cache/
+
+# Logs gerados pelo sistema ou FastAPI
+*.log
+
+# ==========================================
+# Jupyter Notebooks
+# ==========================================
+.ipynb_checkpoints/
+
+# ==========================================
+# Arquivos de Sistema e IDEs
+# ==========================================
+# VSCode e IntelliJ/PyCharm
+.vscode/
+.idea/
+
+# Mac e Windows
+.DS_Store
+Thumbs.db
