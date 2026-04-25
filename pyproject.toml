@@ -3,7 +3,8 @@ name = "customer-churn-prediction"
 version = "0.1.0"
 description = "Tech Challenge Fase 01 - Churn Prediction with PyTorch and FastAPI"
 authors = [
-    { name = "Ray Santos" }
+    { name = "Ray Santos" },
+    { name = "Amanda Silveira" }
 ]
 readme = "README.md"
 requires-python = ">=3.10"

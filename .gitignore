@@ -26,6 +26,7 @@ venv.bak/
 
 # MLFlow
 mlruns/
+mlflow.db
 
 # Data (Ignorando os dados brutos e pesados para o github)
 # Se você quiser subir ao github com os dados, remova essa linha.
