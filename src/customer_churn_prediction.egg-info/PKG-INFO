@@ -1,0 +1,20 @@
+Metadata-Version: 2.4
+Name: customer-churn-prediction
+Version: 0.1.0
+Summary: Tech Challenge Fase 01 - Churn Prediction with PyTorch and FastAPI
+Author: Ray Santos
+Requires-Python: >=3.10
+Description-Content-Type: text/markdown
+Requires-Dist: pandas>=2.0.0
+Requires-Dist: scikit-learn>=1.3.0
+Requires-Dist: matplotlib>=3.7.0
+Requires-Dist: seaborn>=0.12.0
+Requires-Dist: jupyterlab>=4.0.0
+Requires-Dist: mlflow>=2.6.0
+Requires-Dist: torch>=2.0.0
+Requires-Dist: fastapi>=0.100.0
+Requires-Dist: uvicorn>=0.23.0
+Requires-Dist: pydantic>=2.0.0
+Provides-Extra: dev
+Requires-Dist: pytest>=7.4.0; extra == "dev"
+Requires-Dist: ruff>=0.0.280; extra == "dev"
