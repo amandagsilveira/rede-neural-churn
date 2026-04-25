@@ -27,12 +27,11 @@ Link: https://www.kaggle.com/datasets/yeanzc/telco-customer-churn-ibm-dataset/da
 **Input:** Features geradas pelo cruzamento financeiro vs dados da contratação vs dados comportamentais num período estático. Se houver: Tratamento de dados faltantes/categóricos (Adicionar nome das colunas que serão tratadas).
 
 ## FEATURES
-- **Demográficos:** Gender, Age, Senior Citizen, Married, Dependents, Number of Dependents
-- **Localização (agregada):** State, City, Zip Code
-- **Serviços e Contrato:** Phone Service, Multiple Lines, Internet Service, Contract, Offer, Paperless Billing, Payment Method
-- **Uso e Engajamento:** Tenure in Months, Avg Monthly GB Download, Streaming TV, Streaming Movies, Streaming Music, Online Security, Online Backup, Device Protection Plan, Premium Tech Support, Unlimited Data, Referred a Friend, Number of Referrals
-- **Financeiro:** Monthly Charge, Total Charges, Total Refunds, Total Extra Data Charges, Total Long Distance Charges
-- **Satisfação e Valor:** Satisfaction Score, CLTV
+- **Demográficos:** SeniorCitizen, Partner, Dependents *(Gender removido por política de Fairness Institucional)*
+- **Serviços Básicos:** PhoneService, MultipleLines, InternetService
+- **Serviços Agregados:** OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies
+- **Administração de Conta:** tenure (Tempo de contrato ativo), Contract, PaperlessBilling, PaymentMethod
+- **Financeiro:** MonthlyCharges *(TotalCharges deletado deliberadamente para evitar falha de Multicolinearidade)*
 
 ## BUILDING MODELS
 Treinaremos uma Rede Neural (MLP em PyTorch) usando busca de parâmetros. Avaliaremos frente ao baseline (Scikit-Learn). Usaremos o MLFlow para registrar os experimentos.  
